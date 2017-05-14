@@ -1,49 +1,470 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>Meet AdonisJS - Manila JavaScript #18 - To (Infinity) && Beyond</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/adonis.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Top Slide -->
+        <section>
+          <img src="img/adonisjs-logo-transparent.png" alt="" style="background: none; box-shadow: none; border: none;">
+          <h1>Meet AdonisJS</h1>
+          <h4>@carlsonorozco</h4>
+        </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <!-- Introduction -->
+        <section>
+          <section>
+            <h2>Hi! I'm Carlson</h2>
+          </section>
+          <section>
+            <h2>I'm a</h2>
+            <h2>Web Developer</h2>
+            <h2 class="fragment current-visible">Full-Stack?</h2>
+            <h2 class="fragment current-visible">Half-Stack?</h2>
+          </section>
+        </section>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+        <section>
+          <img src="img/infinite-facepalm2.gif" alt="" style="background: none; box-shadow: none; border: none;">
+        </section>
+
+        <!-- The out of stack Developer -->
+        <section>
+          <section>
+            <h2>The out of stack Developer</h2>
+            <img class="fragment visible" src="img/full-stack-developer.png" alt="">
+          </section>
+          <section>
+            <h2>50% Backend Developer</h2>
+            <ul>
+              <li class="fragment visible">PHP</li>
+              <li class="fragment visible">Perl</li>
+              <li class="fragment visible">Javascript</li>
+              <li class="fragment visible">Bash</li>
+              <li class="fragment visible">MySQL</li>
+              <li class="fragment visible">Redis</li>
+              <li class="fragment visible">etc...</li>
+            </ul>
+          </section>
+          <section>
+            <h2>30% DevOps</h2>
+            <ul>
+              <li class="fragment visible">AWS</li>
+              <li class="fragment visible">Google Cloud</li>
+              <li class="fragment visible">GitHub</li>
+              <li class="fragment visible">Nginx</li>
+              <li class="fragment visible">etc...</li>
+            </ul>
+          </section>
+          <section>
+            <h2>15% Love Cats & Dogs</h2>
+            <img class="fragment visible" height="500px" src="img/cat.jpg" alt="">
+          </section>
+          <section>
+            <h2>5% Frontend Developer</h2>
+            <ul>
+              <li class="fragment visible">HTML5</li>
+              <li class="fragment visible">CSS3</li>
+              <li class="fragment visible">MV* Frontend Framework</li>
+              <li class="fragment visible">JQuery! Mother Father</li>
+            </ul>
+          </section>
+          <section data-background="#194894">
+            <img src="img/nyancat_git.gif" alt="nyancat_git" style="background: none; box-shadow: none; border: none;">
+            <h3>More about me: @carlsonorozco</h3>
+          </section>
+        </section>
+
+        <!-- Hello AdonisJS -->
+        <section>
+          <h1>Hello AdonisJS</h1>
+          <img src="img/adonisjs-logo-transparent.png" alt="" style="background: none; box-shadow: none; border: none;">
+          <h3>Practical • Reliable • Productive</h3>
+        </section>
+
+        <!-- What is AdonisJS -->
+        <section>
+          <section>
+            <h2>What is AdonisJS?</h2>
+            <img src="img/what-cat.gif" alt="" style="background: none; box-shadow: none; border: none;">
+          </section>
+          <section>
+            <h2>
+              MVC Framework for NodeJS to write webapps with less code
+            </h2>
+          </section>
+          <section>
+            <h3>MVC Pattern</h3>
+            <img height="500px" src="img/MVC-Flow-Chart.jpg" alt="">
+          </section>
+          <section>
+            <h3>Define a Model</h3>
+            <pre><code class="javascript">
+  'use strict'
+
+  const Lucid = use('Lucid')
+
+  class User extends Lucid {
+
+  }
+            </code></pre>
+          </section>
+          <section>
+            <h3>Using Model</h3>
+            <pre><code class="javascript">
+  const User = use('App/Model/User')
+
+  // All Users
+  const users = yield User.all()
+
+  // Using where clause
+  const activeUsers = yield User.query()
+    .where('status', 'active').fetch()
+            </code></pre>
+          </section>
+          <section>
+            <h3>Example Of Controller</h3>
+            <pre><code class="javascript">
+  const User = use('App/Model/User')
+
+  class UsersController {
+
+    * index (request, response) {
+      const users = yield User.all()
+      yield response.sendView('users.list', {
+        users: users.toJSON()
+      })
+    }
+
+  }
+            </code></pre>
+          </section>
+                    <section>
+            <h3>Example Of View</h3>
+            <pre><code class="javascript">
+  <ul>
+    {% for user in users %}
+      <li>{{ user.username }}</li>
+    {% endfor %}
+  </ul>
+            </code></pre>
+          </section>
+          <section>
+            <h3>Yet Another Web Application Framework</h3>
+            <img src="img/another-framework.gif" alt="" style="background: none; box-shadow: none; border: none;">
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Directory Structure</h2>
+            <img src="img/directory_structure.gif" alt="" style="background: none; box-shadow: none; border: none;">
+          </section>
+          <section>
+            <pre><code class="javascript">
+  ├── app
+  │   ├── Commands
+  │   ├── Http
+  │   ├── Listeners
+  │   ├── Model
+  ├── bootstrap
+  ├── config
+  ├── database
+  │   ├── migrations
+  │   └── seeds
+  ├── providers
+  ├── public
+  ├── resources
+  │   └── views
+  ├── storage
+            </code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Framework concept and Features</h2>
+            <img src="img/features.gif" alt="" style="background: none; box-shadow: none; border: none;">
+          </section>
+          <section>
+            <h3>Basic Routing in AdonisJs</h3>
+            <pre><code class="javascript">
+  const Route = use('Route')
+
+  Route.get('/', function * (request, response) {
+    response.send('This is the home page')
+  })
+            </code></pre>
+          </section>
+          <section>
+            <h3>Routing Middleware</h3>
+            <pre><code class="javascript">
+  const Route = use('Route')
+
+  Route
+    .get('/profile', 'UserController.profile')
+    .middleware('auth')
+            </code></pre>
+          </section>
+          <section>
+            <h3>Interactive Shell A.k.a Ace</h3>
+            <img class="fragment visible" src="img/ace.png" alt="" style="background: none; box-shadow: none; border: none;">
+          </section>
+          <section>
+            <h3>Active Record ORM</h3>
+            <pre><code class="javascript">
+  yield User.all()
+  yield User.query().where('status', 'active').fetch()
+            </code></pre>
+          </section>
+          <section>
+            <h3>Defining database relations</h3>
+            <pre><code class="javascript">
+  class User extends Lucid {
+
+    profile () {
+      return this.hasOne('App/Model/Profile')
+    }
+
+    posts () {
+      return this.hasMany('App/Model/Post')
+    }
+
+  }
+            </code></pre>
+          </section>
+          <section>
+            <h3>Creating New Model</h3>
+            <pre><code>
+  ./ace make:model User
+
+  # or with migration
+  ./ace make:model User --migration
+            </code></pre>
+          </section>
+          <section>
+            <h3>app/Model/User.js</h3>
+            <pre><code class="javascript">
+  'use strict'
+
+  const Lucid = use('Lucid')
+
+  class User extends Lucid {
+  }
+            </code></pre>
+          </section>
+          <section>
+            <h3>Lucid Methods</h3>
+            <p>query(), fetch(), first(), findBy(key, value), find(value), all(), ids(), pair(lhs, rhs), paginate(page, [perPage=20]), pick([limit=1]), pickInverse([limit=1]), create(values), save(), createMany(), findOrFail(value), findByOrFail(key, value), findOrCreate (whereAttributes, values), withTrashed()</p>
+            <p>etc...</p>
+          </section>
+          <section>
+            <h3>Migrations</h3>
+            <img src="img/migrations.gif" alt="" style="background: none; box-shadow: none; border: none;">
+          </section>
+          <section>
+            <h3>Basic Migration Example</h3>
+            <pre><code>
+ ./ace make:migration users --create=users
+            </code></pre>
+            <pre><code>
+  // Output
+  create: database/migrations/1464437815620_users.js
+            </code></pre>
+          </section>
+          <section>
+            <pre><code class="javascript">
+  'use strict'
+
+  const Schema = use('Schema')
+
+  class UsersSchema extends Schema {
+    up () {
+      this.create('users', (table) => {
+        table.increments()
+        table.timestamps()
+      })
+    }
+
+    down () {
+      this.drop('users')
+    }
+  }
+
+  module.exports = UsersSchema
+            </code></pre>
+          </section>
+          <section>
+            <h3>Seeds And Factories</h3>
+            <img src="img/seeders.gif" alt="" style="background: none; box-shadow: none; border: none;">
+          </section>
+          <section>
+            <pre><code class="javascript">
+  // database/factory.js
+
+  const Factory = use('Factory')
+
+  Factory.blueprint('App/Model/User', (fake) => {
+    return {
+      username: fake.username(),
+      email: fake.email(),
+      password: fake.password(),
+      firstName: fake.first(),
+      lastName: fake.last()
+    }
+  })
+            </code></pre>
+          </section>
+          <section>
+            <pre><code class="javascript">
+  // database/seeds/Database.js
+
+  'use strict'
+
+  const Factory = use('Factory')
+
+  class DatabaseSeeder {
+    * run () {
+      yield Factory.model('App/Model/User').create(5)
+    }
+  }
+
+  module.exports = DatabaseSeeder
+            </code></pre>
+            <pre><code>
+  ./ace db:seed
+            </code></pre>
+          </section>
+          <section>
+            <h3>A lot more</h3>
+            <img src="img/a-lot-more.gif" alt="" style="background: none; box-shadow: none; border: none;">
+          </section>
+          <section>
+            <ol>
+              <li>Database Hooks</li>
+              <li>Query Builder</li>
+              <li>Authentications (Sessions, Basic Auth, JWT, Personal API Token)</li>
+              <li>Cookies</li>
+              <li>Mail</li>
+              <li>Errors & Exceptions</li>
+              <li>Events</li>
+              <li>Validations</li>
+              <li>Internationalization</li>
+              <li>WebSocket</li>
+            </ol>
+          </section>
+        </section>
+
+        <!-- Why AdonisJS -->
+        <section>
+          <section>
+            <h2>Why AdonisJS?</h2>
+            <img src="img/why.gif" alt="" style="background: none; box-shadow: none; border: none;">
+          </section>
+          <section>
+            <h3>1. Work on ideas, instead of deciding or downloading bunch of modules everytime.</h3>
+            <img src="img/why_1.gif" alt="" style="background: none; box-shadow: none; border: none;">
+          </section>
+          <section>
+            <h3>2. Hiring developers are easy as you and the one you are about to hire will be working on the same standards and conventions.</h3>
+            <img src="img/why_2.gif" alt="" style="background: none; box-shadow: none; border: none;">
+          </section>
+          <section>
+            <h3>3. The framework makes use of latest inbuilt ES2015 features to get rid of spaghetti code.</h3>
+            <img src="img/why_3.gif" alt="" style="background: none; box-shadow: none; border: none;">
+          </section>
+          <section>
+            <h3>4. AdonisJs ships with a bunch of 1st party components known as providers. Writing entire web server is a matter of weeks(if not days).</h3>
+            <img src="img/why_4.gif" alt="" style="background: none; box-shadow: none; border: none;">
+          </section>
+          <section>
+            <blockquote>
+              "Secret to productivity is not finding more time to do more stuff, but finding the strength to do less of the stuff that doesn’t need doing."
+              – David Heinemeier Hansson
+            </blockquote>
+          </section>
+        </section>
+
+        <!-- So give it a try -->
+        <section>
+          <h2>Give it a try</h2>
+          <img class="fragment visible" src="img/hypnotize.gif" alt="" style="background: none; box-shadow: none; border: none;">
+        </section>
+
+        <!-- Resources -->
+        <section>
+          <h3>Awesome AdonisJS Resources</h2>
+          <ul>
+            <li><strong><a href="https://github.com/zgabievi/awesome-adonisjs" target="_new">awesome-adonis</a></strong> - A curated list of awesome resources from the AdonisJS ecosystem.</li>
+            <li><strong><a href="https://github.com/nuxt/adonuxt" target="_new">adonuxt</a></strong> - starter template for Nuxt.js with AdonisJS</li>
+            <li><strong><a href="https://github.com/adonisjs/discussion" target="_new">adonis/discussion</a></strong> - discussing about new features and sharing random thoughts.</li>
+            <li><strong><a href="https://gitter.im/adonisjs/adonis-framework" target="_new">AdonisJS at Gitter</a></strong></li>
+            <li><strong><a href="https://github.com/adonisjs/adonis-rally">adonis-rally</a></strong> - Adonis rally is a forum engine written using AdonisJs.</li>
+          </ul>
+        </section>
+
+        <!-- Philippine Community -->
+        <section>
+          <h2>Join us at AdonisJS Philippines</h2>
+          <a href="https://www.facebook.com/groups/adonisjs.philippines/" target="_new">https://fb.com/groups/adonisjs.philippines/</a>
+        </section>
+
+        <!-- End -->
+        <section>
+          <h1>Tapos</h1>
+          <img src="img/end.gif" alt="" style="background: none; box-shadow: none; border: none;">
+        </section>
+
+        <section>
+          <h3>References</h3>
+          <p style="font-size: large">
+            <a href="https://scotch.io/tutorials/meet-adonisjs-a-laravel-style-mvc-framework-for-node-js" target="_new">https://scotch.io/tutorials/meet-adonisjs-a-laravel-style-mvc-framework-for-node-js</a>
+            <a href="https://medium.com/@Charles6Andy/node-js-broken-ecosystem-and-rise-of-adonisjs-46e3d63e5fcc" target="_new">https://medium.com/@Charles6Andy/node-js-broken-ecosystem-and-rise-of-adonisjs-46e3d63e5fcc</a><br>
+            <a href="https://medium.com/ph-devconnect/adonisjs-framework-concept-and-features-529734d07606" target="_new">https://medium.com/ph-devconnect/adonisjs-framework-concept-and-features-529734d07606</a><br>
+            <a href="http://techinpink.com/2017/02/27/getting-started-with-adonisjs%E2%80%8A-%E2%80%8Aa-javascript-framework-for-node-js-2/" target="_new">http://techinpink.com/2017/02/27/getting-started-with-adonisjs%E2%80%8A-%E2%80%8Aa-javascript-framework-for-node-js-2/</a><br>
+            <a href="https://auth0.com/blog/creating-your-first-app-with-adonisj-and-adding-authentication/" target="_new">https://auth0.com/blog/creating-your-first-app-with-adonisj-and-adding-authentication/</a><br>
+            <a href="https://raygun.com/blog/node-js-performance-2017/" target="_new">https://raygun.com/blog/node-js-performance-2017/</a>
+            <a href="https://github.com/adonisjs/projects" target="_new">https://github.com/adonisjs/projects</a>
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
 </html>
